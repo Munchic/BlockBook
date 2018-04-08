@@ -28,6 +28,26 @@ class Wallet extends Component {
     })
   }
 
+  clientAuthorization = () => {
+    var Client = require('coinbase').Client;
+    var client = new Client({
+      'apiKey': 'inumYyqyVAtIfQcc',
+      'apiSecret': '9aqR7h88uyPZRvTJRuGlEVQomCKYLCfi',
+      'version':'2018-04-08'
+    });
+
+    client.getAccounts({}, function(err, accounts) {
+      accounts.forEach(function(acct) {
+        console.log(acct.name + ': ' + acct.balance.amount + ' ' + acct.balance.currency);
+        acct.getTransactions(null, function(err, txns) {
+          txns.forEach(function(txn) {
+            console.log('txn: ' + txn.id);
+          });
+        });
+      });
+    });
+  }
+
   render() {
     return (
       <div className="Wallet">
