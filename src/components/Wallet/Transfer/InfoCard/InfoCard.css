@@ -1,0 +1,72 @@
+.InfoCard {
+  position: fixed;
+  top: 20%;
+  z-index: 2;
+  
+  height: 50%;
+  width: 50%;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.4rem;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.2), 0 -10px 50px rgba(0,0,0,0.3);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.PersonalInfo {
+  flex: 1;
+
+  height: 100%;
+  background-color: rgb(238, 238, 238);
+}
+
+.PersonalInfo h3 {
+  margin-top: 1rem;
+}
+
+.PersonalInfo p {
+  margin-top: 0;
+  color: rgb(150, 150, 150)
+}
+
+.ProfilePic {
+  margin-top: 10%;
+  margin-bottom: 0;
+
+  width: 80%;
+  border-radius: 0.4rem;
+}
+
+.Credibility {
+  flex: 2;
+
+  height: 100%;
+
+  overflow: scroll;
+}
+
+.CredibilityScale {
+  margin-left: 10%;
+
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Scale {
+  position: relative;
+  width: 100%;
+}
+
+.Pointer {
+  height: 2rem;
+  width: 1.6rem;
+}
+
+.Transactions {
+  justify-content: left;
+  align-items: left;
+  color: grey;
+}

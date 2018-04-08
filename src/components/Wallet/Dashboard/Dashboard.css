@@ -1,0 +1,39 @@
+.Dashboard {
+  margin-top: 2cm;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
+  min-height: 100vh;
+  background-color: rgb(248, 248, 248);
+
+  text-align: center;
+
+  opacity: 0;
+
+  animation: fade-in 0.5s forwards ease-in-out;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.Balance {
+  top: 6.4cm;
+  position: absolute;
+  left: 15%;
+
+
+  height: 24rem;
+  width: 24rem;
+}
+
+.Dynamics {
+  top: 18cm;
+  position: absolute;
+  left: 15%;
+
+  width: 70vw;
+  min-width: 35rem;
+  height: 30rem;
+}

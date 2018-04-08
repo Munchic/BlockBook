@@ -1,0 +1,46 @@
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 2cm;
+  width: 100vw;
+  background-color: #3b5998;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  z-index: 2;
+  justify-content: space-around;
+
+}
+
+.Logo {
+  position: fixed;
+
+  margin-top: 0.4cm;
+  margin-left: 0.8cm;
+
+  height: 1.2cm;
+  width: 1.2cm;
+}
+
+.Menu {
+  margin: auto;
+  height: 100%;
+
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: center;
+  flex-direction: row;
+
+  color: white;
+}
+
+h3 {
+  margin-top: 1.7rem;
+  font-weight: lighter;
+}
+
+h3:hover {
+  color: rgb(180, 180, 180)
+}
